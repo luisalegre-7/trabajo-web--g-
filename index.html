@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons -->
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>Museo Paleontológico Jurásico</b></h1>
+    <h6>Colosos del Pasado <span class="w3-tag">Era Extinta</span></h6>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="imagenes/portada01.jpg" alt="Fashion Blog" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-text-white">DESCUBRE</h1>
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>TODO SOBRE ELLOS</b></h1>
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Un viaje al pasado que nunca olvidarás</h3>
+          <h5>desde 
+            <span class="w3-opacity">May 2, 2016</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="imagenes/portada02.jpg" alt="Girl Hat" style="width:100%" class="w3-padding-16">
+          <p><strong></strong>El Museo Prehistórico ofrece un recorrido por la historia de la Tierra desde hace millones de años. A través de fósiles, réplicas y exhibiciones interactivas, los visitantes conocerán a los dinosaurios, los primeros seres vivos y la evolución de la vida, descubriendo cómo era el mundo antes de la aparición del ser humano. </p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="imagenes/portada03.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4><span class="w3-opacity w3-medium">SALA DE PALEONTOLOGIA</span></h4>
+                <p>La Sala de Paleontología presenta fósiles y réplicas que muestran la evolución de la vida en la Tierra. En ella se pueden conocer dinosaurios, animales prehistóricos y los principales descubrimientos que permiten entender cómo vivieron y se extinguieron estas especies hace millones de años</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>MUNDO MARINO Prehistórico</h3>
+          <h5>Title description, <span class="w3-opacity">April 23, 2016</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="imagenes/portada04.jpg" alt="Men in Hats" style="width:100%" class="w3-padding-16">
+          <p><strong></strong></p>
+          <p>La Sala Mundo Marino Jurásico muestra los océanos de hace millones de años, donde habitaron grandes reptiles marinos como ictiosaurios y plesiosaurios, junto a peces y corales antiguos. A través de fósiles y recreaciones, los visitantes descubrirán cómo era la vida bajo el mar en la era jurásica.
+            </p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies  </b> <span class="w3-tag w3-white">2</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="w3-row">
+              <hr>
+              <div class="w3-col l2 m3">
+                <img src="/w3images/girl_train.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Amber <span class="w3-opacity w3-medium">April 26, 2015, 10:52 PM</span></h4>
+                <p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="/w3images/girl.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Angie <span class="w3-opacity w3-medium">April 23, 2015, 9:12 PM</span></h4>
+                <p>Love hats!!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Sala de botánica</h3>
+          <h5>Title description, <span class="w3-opacity">April 7, 2016</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="imagenes/portada05.jpg" alt="Runway" style="width:100%" class="w3-padding-16">
+          <p><strong></strong></p>
+          <p>Se exponen representantes tales como cianobacterias, algas,
+líquenes, musgos, helechos, gimnospermas, angiospermas y
+hongos; haciendo énfasis en las especies nativas, entre otras</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="imagenes/portada06.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>nuevos descubrimientos<span class="w3-opacity w3-medium">April 10, 2015, 7:22 PM</span></h4>
+                <p>That was a great runway show! Thanks for everything.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="/w3images/boy.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>John <span class="w3-opacity w3-medium">April 8, 2015, 10:32 PM</span></h4>
+                <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="/w3images/girl_hood.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Anja <span class="w3-opacity w3-medium">April 7, 2015, 9:12 PM</span></h4>
+                <p>Cant wait for the runway to start!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="imagenes/portada06.jpg" alt="Jane" style="width:100%" class="w3-grayscale">
+        <div class="w3-container w3-black">
+          <h4>nuevos descubrimientos</h4>
+          <p>El año 2025 ha sido excepcionalmente prolífico para la paleontología, con el descubrimiento de 44 nuevas especies de dinosaurios hasta diciembre. Museos de renombre mundial han actualizado sus colecciones con piezas exclusivas y hallazgos recién descritos</p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Posts -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>INFORMACION</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            
+            <span class="w3-large">horarios</span>
+            <br>
+            <span>Martes a Domingo
+                   10:00-13:00 hrs
+                   14:00-17:00 hrs
+                   No atendemos feriados</span>
+          </li>
+          <li class="w3-padding-16">
+            
+            <span class="w3-large">Dirección</span>
+            <br>
+            <span>Av. Benavides 5440
+Lima 1801, Santiago de Surco
+Perú</span>
+          </li>
+          <li class="w3-padding-16">
+            
+            <span class="w3-large">Entradas</span>
+            <br>
+            <span>*Niños/as y Estudiantes: S/8.00*Adultos regulares: S/12.00*Recorrido guiado para una sala: S/20.00 (7 personas como máximo)
+*Recorrido guiado para tres salas: S/30.00 (10 personas como máximo)
+*Carnet CONADIS: Gratis</span>
+          </li>
+          <li class="w3-padding-16">
+            
+            <span class="w3-large">Depósito de muestras biológicas</span>
+            <br>
+            <span>El museo actualmente está reconocido como una Institución Científica Depositaria de Material Biológico por el SERFOR con el código de autorización N° AUT-ICND-2018-008</span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+
+      <!-- Advertising -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Historia</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <div class="w3-container w3-display-container w3-light-grey w3-section" style="height:200px">
+            <span class="w3-display-middle">El Museo de Historia Natural «Vera Alleman Haeghebaert» fue creado en 1991 en la Universidad Ricardo Palma para conservar colecciones científicas con fines educativos e investigativos.</span>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Tags -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>VISITANOS</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>
+            <span class="w3-tag w3-black w3-margin-bottom">excurciones</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">charlas y conferencias</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">juegos interactivos</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">sala de exhibicion</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">eventos especiales</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">lineas de tienpo</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">visitas virtuales</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">modelos 3d </span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">cafeteria</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">concursos </span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">videos educativos</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">tienda del museo</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">talleres</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Trends</span>
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Inspiration -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>FOTOS</h4>
+        </div>
+        <div class="w3-row-padding w3-white">
+          <div class="w3-col s6">
+            <p><img src="imagenes/portada07.jpg" alt="Jeans" style="width:100%"></p>
+            <p><img src="imagenes/portada08.jpg" alt="Jeans" style="width:100%"></p>
+          </div>
+          <div class="w3-col s6">
+            <p><img src="imagenes/portada09.jpg" alt="Men in Hats" style="width:100%" class="w3-grayscale"></p>
+            <p><img src="imagenes/portada10.jpg" alt="Jeans" style="width:100%"></p>
+         </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Follow Me</h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+      </div>
+      <hr>
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Subscribe</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join my mailing list to receive updates on the latest museo posts and other things.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey" style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>
